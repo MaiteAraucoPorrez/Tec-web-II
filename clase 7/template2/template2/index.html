@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Template Verde</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#f3faf5;
+    color:#1f2937;
+}
+
+/* HEADER */
+.topbar{
+    background:#166534;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.links a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    transition:.3s;
+}
+
+.links a:hover{
+    opacity:.75;
+}
+
+/* HERO */
+.banner{
+    background:linear-gradient(135deg,#22c55e,#15803d);
+    color:white;
+    text-align:center;
+    padding:95px 20px;
+}
+
+.banner h1{
+    font-size:46px;
+    margin-bottom:14px;
+}
+
+.banner p{
+    font-size:19px;
+    max-width:720px;
+    margin:auto;
+}
+
+/* MAIN AREA */
+.wrap{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+    padding:55px 0;
+}
+
+/* BOXES */
+.panel-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.panel{
+    background:white;
+    padding:28px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #16a34a;
+}
+
+.panel:hover{
+    transform:translateY(-6px);
+}
+
+.panel h3{
+    color:#166534;
+    margin-bottom:12px;
+}
+
+/* FOOTER */
+.base{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:26px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.topbar{
+    flex-direction:column;
+    gap:14px;
+}
+
+.banner h1{
+    font-size:34px;
+}
+
+.banner p{
+    font-size:17px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+    <div class="brand">EcoSite</div>
+
+    <nav class="links">
+        <a href="#">Inicio</a>
+        <a href="#">Nosotros</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section class="banner">
+    <h1>Crecemos contigo</h1>
+    <p>
+        Soluciones digitales con enfoque moderno, diseño elegante
+        y presencia profesional para tu marca.
+    </p>
+</section>
+
+<!-- CARDS -->
+<main class="wrap">
+    <section class="panel-grid">
+
+        <article class="panel">
+            <h3>Desarrollo Web</h3>
+            <p>
+                Sitios rápidos, modernos y adaptables para empresas,
+                profesionales y emprendimientos.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h3>Automatización</h3>
+            <p>
+                Sistemas administrativos y herramientas digitales
+                para mejorar procesos internos.
+            </p>
+        </article>
+
+        <article class="panel">
+            <h3>Asesoría Técnica</h3>
+            <p>
+                Soporte, mantenimiento y acompañamiento tecnológico
+                para impulsar tu negocio.
+            </p>
+        </article>
+
+    </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="base">
+    © 2026 EcoSite - Innovación y crecimiento digital
+</footer>
+
+</body>
+</html>

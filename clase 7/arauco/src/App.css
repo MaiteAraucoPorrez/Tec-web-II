@@ -1,0 +1,127 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background:#f3faf5;
+    color:#1f2937;
+}
+
+/* HEADER */
+.topbar,
+.navbar{
+    background:#166534;
+    padding:18px 40px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand,
+.logo{
+    color:white;
+    font-size:24px;
+    font-weight:bold;
+}
+
+.links a,
+.menu a{
+    color:white;
+    text-decoration:none;
+    margin-left:22px;
+    transition:.3s;
+}
+
+.links a:hover,
+.menu a:hover{
+    opacity:.75;
+}
+
+/* HERO */
+.banner{
+    background:linear-gradient(135deg,#22c55e,#15803d);
+    color:white;
+    text-align:center;
+    padding:95px 20px;
+}
+
+.banner h1{
+    font-size:46px;
+    margin-bottom:14px;
+}
+
+.banner p{
+    font-size:19px;
+    max-width:720px;
+    margin:auto;
+}
+
+/* MAIN AREA */
+.wrap,
+.container{
+    width:90%;
+    max-width:1150px;
+    margin:auto;
+    padding:55px 0;
+}
+
+/* BOXES */
+.panel-grid,
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+    gap:24px;
+}
+
+.panel,
+.card{
+    background:white;
+    padding:28px;
+    border-radius:16px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    border-top:5px solid #16a34a;
+}
+
+.panel:hover,
+.card:hover{
+    transform:translateY(-6px);
+}
+
+.panel h3,
+.card h3{
+    color:#166534;
+    margin-bottom:12px;
+}
+
+/* FOOTER */
+.base,
+.footer{
+    background:#14532d;
+    color:white;
+    text-align:center;
+    padding:26px;
+    margin-top:40px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+.topbar,
+.navbar{
+    flex-direction:column;
+    gap:14px;
+}
+
+.banner h1{
+    font-size:34px;
+}
+
+.banner p{
+    font-size:17px;
+}
+
+}

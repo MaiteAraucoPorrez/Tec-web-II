@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Lista simple</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <div class="app">
+    <h2>Productos</h2>
+
+    <input type="text" id="inputProducto" placeholder="Nombre del producto">
+    <input type="number" id="inputCantidad" placeholder="Cantidad (max 10 unidades)" min="1" max="10">
+    <input type="number" id="inputPrecio" placeholder="Precio por unidad (max 100 Bs)" min="0.01" max="100" step="0.01">
+    <button id="btnAgregar">Agregar</button>
+
+    <ul id="lista"></ul>
+    <p id="mensaje"></p>
+    <p id="contador">Total: 0 productos</p>
+    <p id="totalVenta">Total venta: 0.00 Bs</p>
+  </div>
+
+  <!-- <ul>
+    <li>Elemento 1</li>
+    <li>Elemento 2</li>
+    <li>Elemento 3</li>
+  </ul>
+
+  <ol type = "A">
+    <li>Primer elemento</li>
+    <li>Segundo elemento</li>
+
+    <ul>
+      <li>Subelemento 1</li>
+      <li>Subelemento 2</li>
+      <li>Subelemento 3</li>
+    </ul>
+
+    <li>Tercer elemento</li>
+  </ol> -->
+
+  <script src="js/script.js"></script>
+</body>
+</html>

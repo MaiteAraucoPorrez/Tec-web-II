@@ -1,0 +1,83 @@
+$color-regular: rgb(211, 198, 48);
+$color-excelente: #2ecc71;
+$color-reprobado: #e74c3c;
+$color: rgb(9, 148, 247);
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contador {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+  &__titulo {
+    margin-bottom: 1rem;
+  }
+
+  &__valor {
+    font-size: 3rem;
+    margin: 1rem 0;
+    color: $color-regular;
+
+    &.alto {
+      color: $color-excelente;
+    }
+
+    &.bajo {
+      color: $color-reprobado;
+    }
+    &.regular {
+      color: $color-regular;
+    }
+  }
+
+  &__acciones {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+
+  &--sumar {
+    background: $color-excelente;
+  }
+
+  &--restar {
+    background: $color-reprobado;
+  }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &--resetear {
+    background: $color-regular;
+  }
+
+  &--aprobar {
+      background: $color;
+  }
+}
+
+.contador__mensaje {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: $color;
+}

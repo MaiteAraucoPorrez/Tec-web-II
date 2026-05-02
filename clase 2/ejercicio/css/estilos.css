@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contador {
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.contador__titulo {
+  margin-bottom: 1rem;
+}
+.contador__valor {
+  font-size: 3rem;
+  margin: 1rem 0;
+  color: rgb(211, 198, 48);
+}
+.contador__valor.alto {
+  color: #2ecc71;
+}
+.contador__valor.bajo {
+  color: #e74c3c;
+}
+.contador__valor.regular {
+  color: rgb(211, 198, 48);
+}
+.contador__acciones {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-size: 1.2rem;
+}
+.btn--sumar {
+  background: #2ecc71;
+}
+.btn--restar {
+  background: #e74c3c;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--resetear {
+  background: rgb(211, 198, 48);
+}
+.btn--aprobar {
+  background: rgb(9, 148, 247);
+}
+
+.contador__mensaje {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: rgb(9, 148, 247);
+}
+
+/*# sourceMappingURL=estilos.css.map */
