@@ -1,0 +1,98 @@
+/* A) NO RESPONSIVO (pensado “solo desktop” para que se rompa en móvil) */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  padding: 16px 24px;
+  border-bottom: 1px solid #ddd;
+
+  /* Grid fijo */
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  align-items: center;
+}
+
+.logo {
+  margin: 0;
+}
+
+/* Flex horizontal fijo */
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 16px;
+
+  a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+  }
+}
+
+/* Layout fijo con sidebar */
+.layout {
+  display: grid;
+  grid-template-columns: 260px 1fr; /* fijo */
+}
+
+.sidebar {
+  padding: 16px;
+  border-right: 1px solid #ddd;
+}
+
+.content {
+  padding: 16px 24px;
+}
+
+.hero {
+  padding: 16px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+
+  /* Botones en fila siempre */
+  .actions {
+    display: flex;
+    gap: 12px;
+  }
+}
+
+.btn {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+
+  &--primary {
+    background: #333;
+    color: #fff;
+  }
+
+  &--ghost {
+    background: transparent;
+  }
+  /* .btn--primary .btn--ghost  */
+  /* forma ordenada de crear variantes sin repetir código. */
+}
+
+/* Cards en 3 columnas SIEMPRE (rompe en móvil) */
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 16px 24px;
+}

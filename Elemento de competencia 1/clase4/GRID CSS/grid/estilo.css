@@ -1,0 +1,43 @@
+* {
+  /* Reset básico para tener control total del diseño */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 30px;
+}
+
+.grid {
+  display: grid; /* Activa el sistema de cuadrícula bidimensional para este contenedor */
+  /* Los hijos directos se convierten en grid-items */
+  grid-template-columns: 1fr 1fr 1fr; /* 3 columnas - genera 4 lineas verticales */
+  grid-template-rows: 120px 120px 120px; /* 3 filas - genera 4 lineas horizontales */
+  gap: 10px;
+  border: 4px solid black;
+  padding: 10px;
+}
+
+/* Estilo general */
+.item {
+  background-color: aqua;
+
+  /*grid-column: 1 / 2; /* linea vertical 1 al 2 - columna 1 */
+  /*grid-row: 1 / 2; /* linea horizontal 1 al 2 - fila 1 */
+}
+
+/*Este ocupa el espacio de 4 celdas (2 columnas y 2 filas)*/
+.big {
+  background-color: tomato;
+  grid-column: 2 / 4; /* linea vertical 2 al 4 - columnas 2 y 3 */
+  grid-row: 2 / 4; /* linea horizontal 2 al 4 - filas 2 y 3 */
+}
+
+/*Este ocupa el espacio de 3 celdas (1 columna y 3 filas)*/
+.long {
+  background-color: yellow;
+  grid-column: 1 / 2; /* linea vertical 1 al 2 - columnas 1 */
+  grid-row: 1 / 4; /* linea horizontal 1 al 4 - filas 1, 2 y 3 */
+}

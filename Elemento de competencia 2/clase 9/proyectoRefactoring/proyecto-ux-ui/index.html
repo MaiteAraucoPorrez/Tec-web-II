@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Gabriela Arauco, estudiante de Ingeniería de Sistemas en la UCB.">
+    <meta name="keywords" content="portafolio, ingeniería de sistemas, proyectos, Cochabamba, Bolivia">
+    <meta name="author" content="Gabriela Arauco">
+    <title>Portafolio Gabriela Arauco</title>
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+
+    <div class="layout" id="layout">
+
+        <header class="header" id="encabezado">
+            <button id="btn-hamburguesa" class="btn-hamburguesa" aria-label="Abrir menú de navegación">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <img src="img/logo-oscuro.webp" alt="Logo del portafolio de Gabriela Arauco" class="logo" id ="logo-oscuro" loading="lazy">
+            <img src="img/logo-claro.webp" alt="Logo del portafolio de Gabriela Arauco" class="logo" id ="logo-claro" loading="lazy">
+            <button id="btn-tema" class="btn-tema">Claro</button>
+        </header>
+
+        <nav class="nav" id="nav" aria-label="Navegación principal">
+            <a href="#sobre-mi">Sobre mí</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#formacion">Formación</a>
+            <a href="#cotizador">Cotizador</a>
+            <a href="#contacto">Contacto</a>
+        </nav>
+
+        <main class="contenido" id="contenido">
+
+            <section class="seccion" id="sobre-mi">
+                <article class="sobre-bio">
+                    <h2>Bienvenida a mi espacio, soy <em>Gabriela Arauco</em></h2>
+                    <p>Estudiante de Ingeniería de Sistemas en la Universidad Católica Boliviana "San Pablo".</p>
+                    <p>Apasionada por construir experiencias digitales limpias, funcionales y con atención al detalle.</p>
+                    <p>Actualmente aprendiendo y creciendo.</p>
+                    <a href="#contacto" class="btn-principal">Contáctame</a>
+                </article>
+
+                <ul class="datos-personales">
+                    <li><span>Ubicación:</span> Cochabamba, Bolivia.</li>
+                    <li><span>Carrera:</span> Ingeniería de Sistemas.</li>
+                    <li><span>Disponibilidad:</span> Abierta a oportunidades.</li>
+                </ul>
+
+                <div class="stats">
+                    <article class="stat">
+                        <strong>+3</strong>
+                        <p>Proyectos</p>
+                    </article>
+                    <article class="stat">
+                        <strong>+2</strong>
+                        <p>Años</p>
+                    </article>
+                    <article class="stat">
+                        <strong>+15</strong>
+                        <p>Herramientas</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- HABILIDADES -->
+            <section class="seccion" id="habilidades">
+                <h2>Habilidades</h2>
+
+                <div class="habilidades-contenedor">
+
+                    <div class="habilidades-tecnicas">
+                        <h3>Técnicas</h3>
+
+                        <article class="grupo-habilidad">
+                            <h4>Lenguajes de programación</h4>
+                            <ul>
+                                <li>C++</li>
+                                <li>Python</li>
+                                <li>C#</li>
+                            </ul>
+                        </article>
+
+                        <article class="grupo-habilidad">
+                            <h4>Bases de Datos</h4>
+                            <ul>
+                                <li>SQL Server</li>
+                                <li>MongoDB</li>
+                                <li>PostgreSQL</li>
+                            </ul>
+                        </article>
+
+                        <article class="grupo-habilidad">
+                            <h4>Herramientas</h4>
+                            <ul>
+                                <li>Visual Studio</li>
+                                <li>Git y Github</li>
+                                <li>Ubuntu</li>
+                            </ul>
+                        </article>
+                    </div>
+
+                    <div class="habilidades-blandas">
+                        <h3>Blandas</h3>
+                        <ul>
+                            <li>Comunicación efectiva</li>
+                            <li>Trabajo en equipo</li>
+                            <li>Resolución de problemas</li>
+                            <li>Adaptabilidad</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="seccion" id="proyectos">
+                <h2>Mis Proyectos</h2>
+
+                <div class="filtros-proyectos" id="filtros-proyectos">
+                    <button class="btn-filtro activo" data-categoria="todos">Todos</button>
+                    <button class="btn-filtro" data-categoria="api">API / Backend</button>
+                    <button class="btn-filtro" data-categoria="web">Web</button>
+                    <button class="btn-filtro" data-categoria="python">Python</button>
+                    <button class="btn-filtro" data-categoria="cli">CLI</button>
+                </div>
+
+                <div class="grid-proyectos" id="grid-proyectos">
+
+                    <article class="tarjeta-proyecto" data-categoria="api">
+                        <h3>Gestión de Envíos API RESTful</h3>
+                        <p>API en ASP.NET Core con arquitectura en capas. Gestiona envíos, clientes y conductores con autenticación JWT y despliegue en Azure.</p>
+                        <ul class="proyecto-tags">
+                            <li>ASP.NET Core</li>
+                            <li>SQL Server</li>
+                            <li>JWT</li>
+                            <li>Azure</li>
+                        </ul>
+                        <div class="proyecto-acciones">
+                            <button class="btn-detalles" data-index="0">Ver detalles</button>
+                            <a href="https://github.com/MaiteAraucoPorrez/ShippingAndLogisticsProject.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto" data-categoria="web">
+                        <h3>Sistema Web de Gestión Académica</h3>
+                        <p>Aplicación web para administración de estudiantes y registros académicos con operaciones CRUD y diseño responsive.</p>
+                        <ul class="proyecto-tags">
+                            <li>HTML5</li>
+                            <li>SCSS</li>
+                            <li>JavaScript</li>
+                            <li>SQL</li>
+                        </ul>
+                        <div class="proyecto-acciones">
+                            <button class="btn-detalles" data-index="1">Ver detalles</button>
+                            <a href="https://github.com/MaiteAraucoPorrez/AcademicManagementSystem.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto" data-categoria="python">
+                        <h3>Bot de Discord para Moderación</h3>
+                        <p>Bot automatizado que gestiona roles, detecta spam, aplica sanciones y genera reportes de actividad del servidor.</p>
+                        <ul class="proyecto-tags">
+                            <li>Python</li>
+                            <li>Discord.py</li>
+                            <li>SQLite</li>
+                        </ul>
+                        <div class="proyecto-acciones">
+                            <button class="btn-detalles" data-index="2">Ver detalles</button>
+                            <a href="https://github.com/MaiteAraucoPorrez/DiscordModerationBot.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto" data-categoria="python">
+                        <h3>Scraper de Noticias</h3>
+                        <p>Script que extrae y clasifica noticias de múltiples fuentes, las almacena en base de datos y las envía por email diariamente.</p>
+                        <ul class="proyecto-tags">
+                            <li>Python</li>
+                            <li>BeautifulSoup</li>
+                            <li>PostgreSQL</li>
+                        </ul>
+                        <div class="proyecto-acciones">
+                            <button class="btn-detalles" data-index="3">Ver detalles</button>
+                            <a href="https://github.com/MaiteAraucoPorrez/NewsScraper.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="tarjeta-proyecto" data-categoria="cli">
+                        <h3>CLI de Gestión de Archivos</h3>
+                        <p>Herramienta de línea de comandos para organizar, renombrar y comprimir archivos en masa con soporte para expresiones regulares.</p>
+                        <ul class="proyecto-tags">
+                            <li>Go</li>
+                            <li>Cobra CLI</li>
+                            <li>Linux</li>
+                        </ul>
+                        <div class="proyecto-acciones">
+                            <button class="btn-detalles" data-index="4">Ver detalles</button>
+                            <a href="https://github.com/MaiteAraucoPorrez/FileManagementCLI.git" target="_blank" rel="noopener noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                </div>
+            </section>
+
+            <!-- FORMACIÓN -->
+            <section class="seccion" id="formacion">
+                <h2>Formación Académica</h2>
+
+                <article class="tarjeta-educacion">
+                    <h3>Universidad Católica Boliviana "San Pablo"</h3>
+                    <p><strong>Grado:</strong> Ingeniería de Sistemas</p>
+                    <p><strong>Periodo:</strong> 2024 - Presente</p>
+                    <p><strong>Descripción:</strong> Cursando Ingeniería de Sistemas, con conocimientos en frontend, análisis de datos, redes y desarrollo de software.</p>
+                </article>
+
+                <article class="tarjeta-educacion">
+                    <h3>Colegio Virgen del Mar 3</h3>
+                    <p><strong>Grado:</strong> Bachillerato</p>
+                    <p><strong>Periodo:</strong> 2018 - 2023</p>
+                    <p><strong>Descripción:</strong> Educación secundaria con enfoque en ciencias.</p>
+                </article>
+            </section>
+
+            <!-- COTIZADOR DE SERVICIOS (funcionalidad 7) -->
+            <section class="seccion" id="cotizador">
+                <h2>Cotizador de Servicios</h2>
+                <p class="subtitulo-seccion">¿Tienes un proyecto? Calcula el costo estimado de desarrollo.</p>
+
+                <div class="cotizador-form">
+
+                    <div class="cotizador-campo">
+                        <label for="tipo-servicio">Tipo de servicio *</label>
+                        <select id="tipo-servicio">
+                            <option value="">Selecciona un servicio...</option>
+                            <option value="200">Landing Page — $200</option>
+                            <option value="500">Sitio Web Completo — $500</option>
+                            <option value="800">API RESTful — $800</option>
+                            <option value="300">Bot / Script — $300</option>
+                            <option value="1000">App Web Full Stack — $1000</option>
+                        </select>
+                        <p id="error-servicio" class="msg-error"></p>
+                    </div>
+
+                    <div class="cotizador-campo">
+                        <label for="num-paginas">Páginas / módulos: <strong id="valor-paginas">1</strong></label>
+                        <input type="range" id="num-paginas" min="1" max="20" value="1" aria-label="Número de páginas o módulos">
+                        <div class="range-etiquetas">
+                            <span>1</span>
+                            <span>10</span>
+                            <span>20</span>
+                        </div>
+                    </div>
+
+                    <div class="cotizador-campo">
+                        <label>Características adicionales</label>
+                        <div class="cotizador-extras">
+                            <label class="extra-item">
+                                <input type="checkbox" value="150" name="extra"> Diseño Responsive
+                            </label>
+                            <label class="extra-item">
+                                <input type="checkbox" value="100" name="extra"> Modo Oscuro
+                            </label>
+                            <label class="extra-item">
+                                <input type="checkbox" value="200" name="extra"> Autenticación
+                            </label>
+                            <label class="extra-item">
+                                <input type="checkbox" value="150" name="extra"> Base de Datos
+                            </label>
+                            <label class="extra-item">
+                                <input type="checkbox" value="100" name="extra"> Animaciones
+                            </label>
+                            <label class="extra-item">
+                                <input type="checkbox" value="250" name="extra"> Despliegue en Nube
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="cotizador-campo">
+                        <label for="nombre-cliente">Tu nombre *</label>
+                        <input type="text" id="nombre-cliente" placeholder="Ej: Juan Pérez">
+                        <p id="error-nombre" class="msg-error"></p>
+                    </div>
+
+                    <div class="cotizador-resultado">
+                        <h4>Resumen</h4>
+                        <div class="resultado-linea">
+                            <span>Servicio base:</span>
+                            <span id="resultado-base">$0</span>
+                        </div>
+                        <div class="resultado-linea">
+                            <span>Páginas / módulos:</span>
+                            <span id="resultado-paginas">x 1</span>
+                        </div>
+                        <div class="resultado-linea">
+                            <span>Extras:</span>
+                            <span id="resultado-extras">$0</span>
+                        </div>
+                        <div class="resultado-total">
+                            <span>Total estimado:</span>
+                            <strong id="resultado-total">$0</strong>
+                        </div>
+                    </div>
+
+                    <div class="cotizador-acciones">
+                        <button id="btn-solicitar" class="btn-principal">Solicitar cotización</button>
+                        <button id="btn-limpiar" class="btn-secundario">Limpiar</button>
+                    </div>
+
+                    <p id="feedback-cotizador" class="feedback-cotizador"></p>
+
+                </div>
+            </section>
+
+            <section class="seccion" id="contacto">
+                <h2>Contacto</h2>
+                <p class="subtitulo-seccion">Estoy abierta a oportunidades. ¡Escribime!</p>
+
+                <form class="formulario" id="formulario-contacto" novalidate>
+
+                    <label for="campo-nombre">Nombre</label>
+                    <input type="text" id="campo-nombre" placeholder="Ej: Juan Pérez" autocomplete="name">
+                    <p id="msg-nombre" class="msg-campo"></p>
+
+                    <label for="campo-email">Email</label>
+                    <input type="email" id="campo-email" placeholder="juanperez@email.com" autocomplete="email">
+                    <p id="msg-email" class="msg-campo"></p>
+
+                    <label for="campo-mensaje">Mensaje</label>
+                    <textarea id="campo-mensaje" rows="5" placeholder="Hola, me gustaría hablar sobre un proyecto..."></textarea>
+                    <p id="msg-mensaje" class="msg-campo"></p>
+
+                    <button type="submit" id="btn-enviar" class="btn-principal">Enviar mensaje</button>
+                    <p id="estado-formulario" class="estado-formulario"></p>
+
+                </form>
+            </section>
+
+        </main>
+
+        <footer class="footer" id="pie-pagina">
+            <p>&copy; 2026 Gabriela Arauco. Todos los derechos reservados.</p>
+            <div class="footer-contacto">
+                <h4>Encuéntrame en:</h4>
+                <ul>
+                    <li><a href="mailto:gabriela.arauco.p@ucb.edu.bo">gabriela.arauco.p@ucb.edu.bo</a></li>
+                    <li><a href="https://linkedin.com/in/maite-arauco-83401b328" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                    <li><a href="https://github.com/MaiteAraucoPorrez" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+
+    <button id="btn-arriba" class="btn-arriba" aria-label="Volver al inicio">↑</button>
+
+    <div id="modal" class="modal">
+        <div class="modal-caja">
+            <button id="btn-cerrar-modal" class="modal-cerrar" aria-label="Cerrar">X</button>
+            <div id="modal-cuerpo"></div>
+        </div>
+    </div>
+
+    <div id="datos-proyectos" style="display: none;">
+
+        <div id="proyecto-0">
+            <h3>Gestión de Envíos y Logística API RESTful</h3>
+            <p>API RESTful en ASP.NET Core con arquitectura en capas. Aplica los patrones Repository y Unit of Work. Gestiona clientes, rutas, envíos, paquetes, almacenes, vehículos y conductores con autenticación JWT y despliegue en Azure.</p>
+            <ul>
+                <li>ASP.NET Core</li>
+                <li>Entity Framework Core</li>
+                <li>Dapper</li>
+                <li>SQL Server</li>
+                <li>JWT</li>
+                <li>Azure</li>
+            </ul>
+            <a href="https://github.com/MaiteAraucoPorrez/ShippingAndLogisticsProject.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+
+        <div id="proyecto-1">
+            <h3>Sistema Web de Gestión Académica</h3>
+            <p>Aplicación web para administrar estudiantes y registros académicos con CRUD completo, validaciones de datos y diseño responsive. Usa modelado relacional y consultas SQL optimizadas.</p>
+            <ul>
+                <li>HTML5</li>
+                <li>SCSS</li>
+                <li>JavaScript</li>
+                <li>SQL</li>
+                <li>Responsive Design</li>
+            </ul>
+            <a href="https://github.com/MaiteAraucoPorrez/AcademicManagementSystem.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+
+        <div id="proyecto-2">
+            <h3>Bot de Discord para Moderación</h3>
+            <p>Bot automatizado que gestiona roles de usuarios, detecta y filtra spam, aplica sanciones progresivas y genera reportes de actividad del servidor en tiempo real.</p>
+            <ul>
+                <li>Python</li>
+                <li>Discord.py</li>
+                <li>SQLite</li>
+            </ul>
+            <a href="https://github.com/MaiteAraucoPorrez/DiscordModerationBot.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+
+        <div id="proyecto-3">
+            <h3>Scraper de Noticias</h3>
+            <p>Script que extrae y clasifica noticias de múltiples fuentes web automáticamente, las almacena en PostgreSQL y envía un resumen diario categorizado por email.</p>
+            <ul>
+                <li>Python</li>
+                <li>BeautifulSoup</li>
+                <li>PostgreSQL</li>
+            </ul>
+            <a href="https://github.com/MaiteAraucoPorrez/NewsScraper.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+
+        <div id="proyecto-4">
+            <h3>CLI de Gestión de Archivos</h3>
+            <p>Herramienta de línea de comandos en Go para organizar, renombrar y comprimir archivos en masa. Soporta expresiones regulares y múltiples formatos de compresión. Diseñada para Linux.</p>
+            <ul>
+                <li>Go</li>
+                <li>Cobra CLI</li>
+                <li>Linux</li>
+            </ul>
+            <a href="https://github.com/MaiteAraucoPorrez/FileManagementCLI.git" target="_blank" rel="noopener noreferrer">Ver en GitHub</a>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

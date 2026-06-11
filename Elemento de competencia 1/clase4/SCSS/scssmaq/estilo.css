@@ -1,0 +1,60 @@
+/* =========================
+   VARIABLES
+========================= */
+/* =========================
+   MIXIN FLEX reutilizable
+========================= */
+/* =========================
+   ESTILOS
+========================= */
+header {
+  background-color: red;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  /* primer flex */
+}
+
+nav {
+  background-color: yellow;
+  flex: 1;
+}
+nav h1 {
+  margin: 0;
+}
+
+main {
+  background-color: purple;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  /* segundo flex */
+}
+main h1 {
+  margin: 0;
+}
+main article {
+  background-color: lime;
+}
+main article h1 {
+  margin: 0;
+}
+
+aside {
+  background-color: aqua;
+  flex: 1;
+}
+aside h1 {
+  margin: 0;
+}
+
+footer {
+  background-color: blue;
+}
+footer h1 {
+  margin: 0;
+}
+
+/*# sourceMappingURL=estilo.css.map */

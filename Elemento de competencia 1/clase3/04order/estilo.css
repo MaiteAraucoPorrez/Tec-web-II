@@ -1,0 +1,38 @@
+.contenedor {
+  display: flex;
+  gap: 10px;
+  background: lightblue;
+  padding: 10px;
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+
+  order: 0;
+}
+
+/* poner 1 al final */
+/* .uno { order: 1; } */
+
+
+/* prioridades diferentes */
+/* .uno   { order: 2; }
+.dos   { order: 1; } 
+.tres  { order: 0; }
+.cuatro{ order: 0; } */
+
+/* numeros negativos */
+/* .tres { order: -1; } */
+
+/* numero grande */
+/* .dos { order: 999; } */
+
+/* -∞  →  0  →  1  →  2  →  999  →  +∞ */
+/* menor número = aparece antes */

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia Digital</title>
+
+    <link rel="stylesheet" href="css/estilos.css">
+
+</head>
+
+<body>
+
+    <header class="header">
+
+        <h1>Agencia Digital</h1>
+
+        <button id="modoOscuro">Modo oscuro</button>
+
+        <!-- <button id="hamburger">☰</button> -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <nav class="nav" id="nav">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+
+    <section id="inicio" class="seccion">
+
+        <h2>Bienvenido</h2>
+
+        <p>Somos una agencia dedicada al desarrollo web y diseño digital.</p>
+
+        <input type="text" id="inputBusqueda" placeholder="Buscar tecnología...">
+
+        <ul id="sugerencias"></ul>
+
+    </section>
+
+
+    <section id="servicios" class="seccion">
+
+        <h2>Servicios</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Desarrollo Web</h3>
+                <p>Sitios modernos y responsivos</p>
+                <button id="abrirModal">Más información</button>
+            </div>
+
+            <div class="card">
+                <h3>Diseño UI</h3>
+                <p>Interfaces centradas en el usuario</p>
+            </div>
+
+            <div class="card">
+                <h3>SEO</h3>
+                <p>Optimización para buscadores</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="portafolio" class="seccion">
+
+        <h2>Portafolio</h2>
+
+        <div class="filtros">
+            <button data-categoria="todos">Todos</button>
+            <button data-categoria="web">Web</button>
+            <button data-categoria="app">App</button>
+            <button data-categoria="design">Diseño</button>
+        </div>
+
+        <div class="galeria">
+
+            <div class="item web">Proyecto Web 1</div>
+            <div class="item app">Aplicación 1</div>
+            <div class="item design">Diseño 1</div>
+            <div class="item web">Proyecto Web 2</div>
+            <div class="item app">Aplicación 2</div>
+
+        </div>
+
+    </section>
+
+
+    <section id="contacto" class="seccion">
+
+        <h2>Contacto</h2>
+
+        <form id="formulario">
+
+            <input type="text" id="nombre" placeholder="Nombre">
+
+            <input type="email" id="correo" placeholder="Correo">
+
+            <textarea placeholder="Mensaje"></textarea>
+
+            <button type="submit">Enviar</button>
+
+            <p id="mensaje"></p>
+
+        </form>
+
+    </section>
+
+
+    <button id="btnArriba">↑</button>
+
+
+    <div id="modal" class="modal">
+
+        <div class="modal-contenido">
+
+            <span id="cerrarModal">&times;</span>
+
+            <h3>Información</h3>
+
+            <p>Ofrecemos desarrollo web profesional y soluciones digitales.</p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>

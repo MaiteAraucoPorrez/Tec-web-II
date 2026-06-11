@@ -1,0 +1,33 @@
+body{
+    font-family: Arial, sans-serif;
+    text-align:center;
+}
+
+/* fondo del modal */
+
+.modal{
+    position:fixed;
+    /* position: fixed; hace que un elemento *
+    /* permanezca fijo en la pantalla sin moverse con el scroll. */
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,0.7);
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+}
+
+/* caja del modal */
+
+.modal-contenido{
+    background:white;
+    padding:20px;
+    border-radius:5px;
+    width:300px;
+}

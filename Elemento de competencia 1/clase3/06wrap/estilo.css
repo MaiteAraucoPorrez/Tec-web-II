@@ -1,0 +1,22 @@
+.contenedor {
+  display: flex;
+  width: 300px; /* pequeño a propósito */
+  background: lightblue;
+  gap: 10px;
+
+  flex-wrap: nowrap; /* cambiar acá las opciones */
+}
+
+.item {
+  width: 90px;
+  height: 60px;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* flex-wrap: nowrap; /* no permite salto (por defecto) */ 
+/* flex-wrap: wrap; /* permite salto */ 
+/* flex-wrap: wrap-reverse; /* salto invertido */

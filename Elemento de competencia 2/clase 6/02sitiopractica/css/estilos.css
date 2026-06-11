@@ -1,0 +1,73 @@
+body {
+  background-color: #f0f0f0;
+  font-family: Arial;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  text-align: center;
+  font: bold 18px Arial;
+}
+
+img {
+  height: 300px;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: red;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font: bold 16px Arial;
+  width: 150px;
+  border-radius: 16px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background: #2ecc71;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+:focus {
+  outline: 2px solid #3498db;
+}
+
+/*# sourceMappingURL=estilos.css.map */

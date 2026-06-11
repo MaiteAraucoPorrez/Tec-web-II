@@ -1,0 +1,113 @@
+$color-principal: #333;
+$color-texto: white;
+$color-fondo: #f4f4f4;
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background:$color-fondo;
+}
+
+/* HEADER */
+
+.header{
+  display:flex;
+  justify-content:space-between; /*alineado izq derecha */
+  align-items:center; /* alineacion vertical */
+  background:$color-principal;
+  color:$color-texto;
+  padding:15px 20px;
+  position:relative; /* Permite que los elementos 
+  con position:absolute (como el menú en móvil) se posicionen
+  tomando este header como referencia */
+}
+
+/* LOGO */
+
+.logo{
+  font-size:20px;
+  font-weight:bold;
+}
+
+/* MENU (movil por defecto) */
+
+.nav{
+  position:absolute;
+  /* Permite posicionar el menú en un lugar específico 
+  respecto al contenedor padre (.header)
+  */
+  /* position: relative en el padre y position: absolute en el hijo 
+  suelen usarse de forma complementaria. */
+  top:60px;
+  left:0;
+  width:100%;
+  background:$color-principal;
+  display:none; /* se esconde inicialmente*/
+
+  ul{
+    list-style:none;
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    padding:20px 0;
+    gap:15px;
+  }
+
+  a{
+    color:$color-texto;
+    text-decoration:none;
+    font-size:16px;
+  }
+}
+
+/* CLASE ACTIVADA POR JAVASCRIPT */
+
+.nav.active{
+  display:block;
+}
+
+/* BOTON HAMBURGUESA */
+
+.hamburger{
+  display:flex;
+  flex-direction:column;
+  cursor:pointer;
+
+  span{
+    width:25px;
+    height:3px;
+    background:$color-texto;
+    margin:4px 0;
+  }
+}
+
+/* TABLET / DESKTOP */
+
+@media (min-width:768px){
+
+  .nav{
+    position:static;
+    /* static: valor por defecto de todos los elementos HTML.
+    El menu ya no necesita desplegarse simplemente se muestra 
+    alineado dentro del header usando flexbox. */
+    display:block; // comportamiento de bloque
+    width:auto; // El ancho se ajusta automáticamente
+    background:none; // elimina el fondo del nav 
+
+    ul{
+      flex-direction:row; // se redefine a fila
+      padding:0;
+      gap:20px;
+    }
+  }
+
+  .hamburger{
+    display:none; //se esconde el elemento .hamburguer
+  }
+
+}

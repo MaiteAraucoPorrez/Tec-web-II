@@ -1,0 +1,33 @@
+.caja {
+  background: coral;
+  margin: 0px;
+  padding: 10px;
+  color: white;
+}
+
+/* display: block / inline / inline-block  */
+
+.block {
+  display: block;
+  width: 200px;
+  height: 100px;
+}
+/*Ocupa toda la línea - Respeta width y height - Salta de línea automáticamente */
+
+.inline {
+  background: blue;
+  display: inline;
+  width: 500px;
+  height: 500px;
+}
+
+/* width y height no funcionan - Se comporta como texto - Se coloca uno al lado del otro */
+
+.inline-block {
+  background: green;
+  display: inline-block;
+  width: 200px;
+  height: 50px;
+}
+
+/* Se comporta como texto - Acepta width y height */

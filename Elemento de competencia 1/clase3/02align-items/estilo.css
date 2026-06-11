@@ -1,0 +1,30 @@
+.contenedor {
+  display: flex;
+  height: 200px;
+  background: lightblue;
+
+  justify-content: center; /* solo para que se vea mejor */
+  align-items: baseline; /* cambiar opciones acá */
+}
+
+.item {
+  width: 70px;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+/* alturas distintas para notar la alineación */
+.a { height: 40px; font-size: 14px; }
+.b { height: 80px; font-size: 20px; }
+.c { height: 120px; font-size: 28px; }
+
+/* justify-content → eje principal
+align-items → eje secundario */
+
+/* align-items: stretch;      /* valor por defecto - Se estiran para ocupar todo el alto - solo si no tienen height fija */
+/* align-items: flex-start;   /* inicio - Todos arriba */
+/* align-items: flex-end;     /* final - Todos abajo */
+/* align-items: center;       /* centro */
+/* align-items: baseline;     /* alineación por línea de texto - Alinea según la base del texto (no la caja)*/

@@ -1,0 +1,7 @@
+HTML
+<button type="reset">Cancelar</button>
+
+JS
+document.querySelector("button[type='reset']").addEventListener("click", () => {
+    document.getElementById("mensaje").textContent = "Formulario reiniciado";
+});

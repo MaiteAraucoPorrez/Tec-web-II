@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/* =========================
+   VARIABLE
+========================= */
+/* =========================
+   MIXIN
+========================= */
+/* =========================
+   ESTILOS
+========================= */
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+/* ANIDACIÓN */
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+}
+.card h2 {
+  color: #3498db; /* uso del variable */
+}
+.card p {
+  color: #333; /* uso del variable */
+}
+.card .btn {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  /* uso del mixin */
+  background: #3498db;
+  color: white;
+}
+
+/*# sourceMappingURL=estilo.css.map */

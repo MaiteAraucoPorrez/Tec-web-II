@@ -1,0 +1,18 @@
+HTML
+<p id="mensaje"></p>
+
+JS
+const formulario = document.getElementById("formulario");
+
+formulario.addEventListener("submit", function(e) {
+  e.preventDefault();
+
+  //mensaje enviando
+  const mensaje = document.getElementById("mensaje");
+  mensaje.textContent = "Enviando...";
+
+  //simplemente un delay de 2 segundos
+  setTimeout(() => {
+    mensaje.textContent = "Formulario enviado correctamente";
+  }, 2000);
+});

@@ -1,0 +1,38 @@
+.contenedor {
+  display: flex;
+  height: 200px;
+  background: lightblue;
+
+  align-items: center; /* regla general para TODOS */
+  gap: 10px;
+}
+
+.item {
+  width: 70px;
+  background: steelblue;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* diferentes alturas para notar mejor */
+.item:nth-child(1) { height: 60px; }
+.item:nth-child(2) { height: 90px; }
+.item:nth-child(3) { height: 120px; }
+
+.especial {
+  align-self: center; /* cambiar las opciones acá */
+}
+
+/*
+align-items afecta a TODOS
+align-self afecta a UNO SOLO
+*/
+
+/* align-self: auto; hereda (en este caso center) */ 
+/* align-self: stretch; Se estira todo el alto - funciona solo si no tiene height fija */
+/* align-self: flex-start; Se va arriba */
+/* align-self: flex-end; Se va abajo */
+/* align-self: center; centra */ 
+/* align-self: baseline; Se alinea por la base del texto */

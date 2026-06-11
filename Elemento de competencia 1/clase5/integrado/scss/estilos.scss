@@ -1,0 +1,136 @@
+/* VARIABLES */
+$primary: #f05900;
+$secondary: #8a8a8a;
+$bg: #f4f4f4;
+
+/* MIXIN FLEX */
+@mixin flex($justify:center, $align:center, $dir:row){
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $dir;
+}
+
+@mixin btn{
+  border:none;
+  padding:10px 20px;
+  border-radius:6px;
+  cursor:pointer;
+}
+
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: sans-serif;
+  background:$bg;
+}
+
+/* GRID PRINCIPAL */
+.layout{
+  display:grid;
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 70px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+  height:100vh;
+}
+
+/* AREAS GRID */
+.header{
+  grid-area:header;
+  background:$primary;
+  color:white;
+  @include flex;
+}
+
+.sidebar{
+  grid-area:sidebar;
+  background:#222;
+  color:white;
+
+  .menu{
+    @include flex(flex-start, flex-start, column);
+    padding:20px;
+    gap:10px;
+
+    a{
+      color:white;
+      text-decoration:none;
+    }
+
+    a:hover{
+      color:$primary;
+      text-decoration:underline;
+    }
+  }
+}
+
+.content{
+  grid-area:content;
+  padding:20px;
+
+  /* FLEX INTERNO */
+  .topbar{
+    @include flex(space-between);
+    margin-bottom:20px;
+  }
+
+  /* GRID PARA CARDS */
+  .cards{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    gap:20px;
+
+    .card{
+      background:white;
+      padding:20px;
+      border-radius:8px;
+      box-shadow:0 3px 6px rgba(0,0,0,.1);
+    }
+
+    .imgcurso {
+      width: 100%;
+      border-radius: 8px;
+    }
+  }
+}
+
+.footer{
+  grid-area:footer;
+  background:$primary;
+  color:white;
+  @include flex(space-between, stretch, row);
+
+  .left, .right{
+    flex:1;
+    @include flex;
+  }
+
+  .left {
+      background-color: aqua;
+  }
+}
+
+/* BOTON REUTILIZABLE */
+.primary{
+  @include btn;
+  background:$primary;
+  color:white;
+}
+
+.secondary{
+  @include btn;
+  background:$secondary;
+  color:white;
+}
+
+.logo {
+  width: 200px;
+}

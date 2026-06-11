@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #ffffff;
+  color: #333;
+  transition: 0.3s;
+}
+
+.contenedor {
+  text-align: center;
+  margin-top: 50px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+/* MODO OSCURO */
+.dark {
+  background: #222;
+  color: #fff;
+}
+
+.dark button {
+  background: #444;
+  color: white;
+}
+
+/*# sourceMappingURL=estilos.css.map */

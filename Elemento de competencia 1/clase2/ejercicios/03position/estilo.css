@@ -1,0 +1,21 @@
+.pos-container {
+  height: 200px;
+  background: #eee;
+}
+
+.pos {
+  width: 100px;
+  padding: 10px;
+  background: orange;
+  margin: 5px;
+}
+
+.static {
+  position: static;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}

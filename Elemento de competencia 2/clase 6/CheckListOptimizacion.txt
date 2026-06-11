@@ -1,0 +1,100 @@
+PERFORMANCE (Rendimiento)
+1. Imágenes sin optimizar
+Problema: Pesan demasiado
+Solución:
+•	Usar WebP/AVIF
+•	Comprimir (TinyPNG)
+•	Ajustar dimensiones reales
+2. Imágenes sin lazy loading
+Problema: Cargan todas al inicio
+Solución:
+<img src="img.jpg" loading="lazy">
+Le dice al navegador que cargue la imagen solo cuando esté cerca de verse en pantalla, en lugar de cargarla toda desde el inicio.
+3. JavaScript bloqueante
+Problema: Bloquea el renderizado
+Solución:
+<script src="app.js" defer></script>
+defer: le dice al navegador que descargue el script en paralelo, pero que lo ejecute solo después de que el HTML esté completamente cargado.
+4. CSS no optimizado
+Problema: Archivos grandes o innecesarios
+Solución:
+•	Minificar
+•	Eliminar CSS no usado (PurgeCSS)
+5. Uso excesivo de librerías
+Problema: JS pesado (ej: Bootstrap + jQuery innecesario)
+Solución:
+•	Usar solo lo necesario
+•	Reemplazar con JS nativo cuando sea posible
+ACCESIBILIDAD
+6. Imágenes sin alt
+Problema: Lectores de pantalla no pueden interpretar la imagen
+Solución:
+<img src="logo.png" alt="Logo de la empresa">
+7. Contraste de colores bajo
+Problema: Texto ilegible
+Solución:
+•	Usar contraste mínimo 4.5:1
+4.5:1 = nivel mínimo para texto normal (tamaño estándar)
+3:1 = permitido solo para texto grande (18px o más)
+7:1 = nivel más estricto (mejor accesibilidad)
+Cuanto mayor el número, mejor se distingue el texto.
+https://webaim.org/resources/contrastchecker/
+8. Inputs sin label
+Problema: Formularios inaccesibles
+Solución:
+<label for="email">Correo</label>
+<input id="email">
+9. Falta de roles ARIA
+Problema: Elementos no semánticos
+Solución:
+<div role="alert">Mensaje</div>
+ARIA significa Accessible Rich Internet Applications. Es un conjunto de atributos HTML que ayudan a que tecnologías como lectores de pantalla entiendan mejor la interfaz
+role="button" indica que un elemento actúa como botón
+role="dialog" indica una ventana modal
+role="navigation" zona de navegación
+role="alert" El lector de pantalla interrumpe lo que esté leyendo y anuncia ese mensaje.
+aria-live=”polite” espera lo que lee y luego lee lo actual
+aria-live=”assertive” interrumpe y lo lee inmeduatamente
+10. Navegación sin teclado
+Problema: No usable sin mouse
+Solución:
+•	Usar :focus en CSS
+11. HTML no semántico
+Problema: Mala estructura
+Solución:
+•	Usar <header>, <main>, <nav>, <footer>
+12. Falta de landmark (main)
+Problema: Navegación difícil
+Solución:
+<main>Contenido principal</main>
+MEJORES PRÁCTICAS
+13. Uso de HTTP en lugar de HTTPS
+Problema: Inseguridad
+Solución:
+•	Implementar SSL
+14. Errores en consola
+Problema: Código inestable
+Solución:
+•	Corregir errores JS y otros en consola
+SEO
+15. Falta de meta descripción
+Problema: Mala indexación
+Solución:
+<meta name="description" content="Descripción de la página">
+16. Falta de etiquetas <title>
+Problema: No aparece correctamente en buscadores
+Solución:
+<title>Mi sitio web</title>
+17. Estructura incorrecta de encabezados
+Problema: Mala jerarquía (H1, H2...)
+Solución:
+•	Usar un solo <h1>
+•	Orden lógico
+18. Imágenes sin alt (también SEO)
+Problema: No indexables
+Solución:
+•	Describir contenido relevante
+18. URL no amigables
+Problema: Difícil indexación
+Solución:
+•	/productos/zapatos-deportivos en lugar de /page?id=123

@@ -1,0 +1,32 @@
+body {
+  font-family: Arial;
+}
+
+/* estilos base */
+.caja {
+  width: 200px;
+  padding: 20px;
+  border: 5px solid blue;
+  margin: 20px;
+  background: lightblue;
+  font-weight: bold;
+}
+
+/* comportamiento por defecto */
+.content {
+  box-sizing: content-box;
+  /* todo incluido dentro de 200 */
+}
+
+/* comportamiento moderno */
+.border {
+  box-sizing: border-box;
+  /* todo incluido dentro de 200 */
+}
+
+/* Las dos dicen 200px… pero solo una respeta 200px  */
+/* en proyectos reales se suele usar esta regla:
+* {
+  box-sizing: border-box;
+} 
+*/

@@ -1,0 +1,37 @@
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;     /* obligatorio */
+  width: 300px;
+  height: 300px;       /* espacio vertical visible */
+  background: lightblue;
+  gap: 10px;
+
+  justify-content: space-between; /* izquierda ↔ derecha */
+  align-content: space-between; /*acá hacer los cambios */
+}
+
+.item {
+  width: 80px;
+  height: 60px;
+  background: steelblue;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* NO funciona si solo hay una fila. */
+/* Solo funciona cuando hay flex-wrap: wrap y múltiples líneas. */
+
+/* align-content: stretch; Las filas se estiran para ocupar todo el alto */
+/* align-content: flex-start; Todas las filas arriba*/
+/* align-content: flex-end; Todas abajo */
+/* align-content: center; Bloque centrado verticalmente */
+/* align-content: space-between; Espacio solo entre filas */
+/* align-content: space-around; Espacio alrededor (mitad en bordes)  */
+/* align-content: space-evenly; Espacios iguales en todas partes */
+
+/* distribucion total  */
+/* justify-content: space-between; /* izquierda ↔ derecha */
+/* align-content: space-between;   /* arriba ↕ abajo */

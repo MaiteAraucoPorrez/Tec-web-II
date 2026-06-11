@@ -1,0 +1,99 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f4f4f4;
+}
+
+/* HEADER */
+.header {
+  display: flex;
+  justify-content: space-between; /*alineado izq derecha */
+  align-items: center; /* alineacion vertical */
+  background: #333;
+  color: white;
+  padding: 15px 20px;
+  position: relative; /* Permite que los elementos 
+con position:absolute (como el menú en móvil) se posicionen
+tomando este header como referencia */
+}
+
+/* LOGO */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MENU (movil por defecto) */
+.nav {
+  position: absolute;
+  /* Permite posicionar el menú en un lugar específico 
+  respecto al contenedor padre (.header)
+  */
+  /* position: relative en el padre y position: absolute en el hijo 
+  suelen usarse de forma complementaria. */
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: #333;
+  display: none; /* se esconde inicialmente*/
+}
+.nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px 0;
+  gap: 15px;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* CLASE ACTIVADA POR JAVASCRIPT */
+.nav.active {
+  display: block;
+}
+
+/* BOTON HAMBURGUESA */
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  margin: 4px 0;
+}
+
+/* TABLET / DESKTOP */
+@media (min-width: 768px) {
+  .nav {
+    position: static;
+    /* static: valor por defecto de todos los elementos HTML.
+    El menu ya no necesita desplegarse simplemente se muestra 
+    alineado dentro del header usando flexbox. */
+    display: block;
+    width: auto;
+    background: none;
+  }
+  .nav ul {
+    flex-direction: row;
+    padding: 0;
+    gap: 20px;
+  }
+  .hamburger {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

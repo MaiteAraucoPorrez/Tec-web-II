@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.contenedor {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+}
+
+.correcto {
+  border-color: green;
+}
+
+.error {
+  border-color: red;
+}
+
+#mensaje {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+/*# sourceMappingURL=estilos.css.map */

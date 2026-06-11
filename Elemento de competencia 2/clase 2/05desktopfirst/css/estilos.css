@@ -1,0 +1,65 @@
+@charset "UTF-8";
+/* ====== VARIABLES ====== */
+/* definiendo BREAKPOINTS para arriba */
+/* ====== BASE ====== */
+body {
+  font-family: Arial;
+  margin: 0;
+}
+
+.header {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.nav {
+  background: #ddd;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Desktop: 3 columnas SIEMPRE (luego lo corregimos con max-width) */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  padding: 20px;
+}
+
+.card {
+  background: #f2f2f2;
+  padding: 30px;
+  text-align: center;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* Para laptop y resoluciones mayores, mantenemos 3 columnas */
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+/*
+min-width Aplica estilos cuando la pantalla es igual o mayor al ancho indicado.
+    crece hacia arriba (MOBILE FIRST)
+max-width Aplica estilos cuando la pantalla es igual o menor al ancho indicado.
+    baja hacia resoluciones pequeñas (DESKTOP FIRST)
+
+*/
+
+/*# sourceMappingURL=estilos.css.map */

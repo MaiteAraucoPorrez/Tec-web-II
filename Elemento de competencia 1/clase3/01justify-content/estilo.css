@@ -1,0 +1,27 @@
+.contenedor {
+  display: flex;
+  background: lightblue;
+  height: 100px;
+  justify-content: space-evenly; /* cambiar esta línea */
+}
+
+.item {
+  width: 60px;
+  height: 60px;
+  background: steelblue;
+  color: white;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* justify-content → eje principal
+align-items → eje secundario */
+
+/* justify-content: flex-start; /* inicio */
+/* justify-content: flex-end; /* final */
+/* justify-content: center; /* centro */
+/* justify-content: space-between; /* espacio entre */
+/* justify-content: space-around; /* espacio alrededor (los extremos tienen la mitad) */
+/* justify-content: space-evenly; /* espacio igual para todos - mas simétrico */

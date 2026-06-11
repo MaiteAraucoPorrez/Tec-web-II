@@ -1,0 +1,68 @@
+@charset "UTF-8";
+/* ====== Base - Mobile First ====== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+}
+
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo {
+  margin: 0 0 16px; /* arriba lados abajo */
+}
+
+/* FLEX: menú vertical en móvil */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.nav a {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+}
+
+/* GRID: cards en 1 columna */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+  padding: 16px;
+}
+
+.card {
+  padding: 16px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+}
+
+/* ====== Breakpoint ====== */
+/* cuando la pantalla este en 768px o + se ejecutará */
+/* media query - es como un if en css */
+/* funciona solo si existe <meta name="viewport" */
+@media (min-width: 768px) {
+  /* menú horizontal */
+  .nav {
+    flex-direction: row;
+  }
+  /* 2 columnas en grid */
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+/* En contrapartida:
+@media (max-width: 768px) {
+Cuando el ancho de la pantalla sea 768px o menor, se aplicarán estos estilos. */
+
+/*# sourceMappingURL=estilos.css.map */

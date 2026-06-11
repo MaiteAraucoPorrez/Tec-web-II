@@ -1,0 +1,28 @@
+/*
+32px = 2rem
+16px = 1rem
+*/
+
+html {
+  font-size: 16px;  // tamaño base
+}
+
+.container {
+  padding: 20px;
+}
+
+.titulo-px {
+  font-size: 32px;   // fijo
+}
+
+.titulo-rem {
+  font-size: 2rem;   // 2 x 16px = 32px
+}
+
+.texto-px {
+  font-size: 16px;
+}
+
+.texto-rem {
+  font-size: 1rem;
+}

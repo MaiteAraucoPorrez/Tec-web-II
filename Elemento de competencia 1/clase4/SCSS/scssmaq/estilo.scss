@@ -1,0 +1,64 @@
+/* =========================
+   VARIABLES
+========================= */
+$header: red;
+$nav: yellow;
+$main: purple;
+$aside: aqua;
+$article: lime;
+$footer: blue;
+
+
+/* =========================
+   MIXIN FLEX reutilizable
+========================= */
+@mixin flex($direction: row) {
+  display: flex;
+  flex-direction: $direction;
+}
+
+
+/* =========================
+   ESTILOS
+========================= */
+header {
+  background-color: $header;
+}
+
+.container {
+  @include flex;   /* primer flex */
+}
+
+nav {
+  background-color: $nav;
+  flex: 1;
+
+  h1 { margin: 0; }
+}
+
+main {
+  background-color: $main;
+  flex: 2;
+  @include flex(column);   /* segundo flex */
+
+  h1 { margin: 0; }
+
+  article {
+    background-color: $article;
+
+    h1 { margin: 0; }
+  }
+}
+
+aside {
+  background-color: $aside;
+  flex: 1;
+
+  h1 { margin: 0; }
+}
+
+footer {
+  background-color: $footer;
+
+  h1 { margin: 0; }
+}

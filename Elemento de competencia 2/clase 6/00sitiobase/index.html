@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="css/estilos.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo de validación de edad con JavaScript">
+  <meta name="author" content="Maite">
+  <meta name="keywords" content="validación, edad, JavaScript, formulario, accesibilidad">
+  <title>Sitio Web Validacion de Edad</title>
+</head>
+
+<body>
+
+  <header class ="header">
+    <h1>Validación de Edad</h1>
+  </header>
+
+  <main class ="contenedor">
+    <section>
+      <img src="img/note.webp" alt="Imagen de edad" loading="lazy">
+      
+      <form id="formulario">
+        <label for="edad">Ingrese su edad:</label>
+        <input type="number" placeholder="Edad" id="edad" min="0">
+        <button type="button" id="validar">Validar</button>
+
+        <p id="mensaje" role="alert" aria-live="assertive"></p>
+        <!-- assertive interrumpe al usuario para mostrar el mensaje de validación -->
+      </form>
+    </section>
+  </main>
+
+  <script src="js/script.js" defer></script>
+</body>
+</html>

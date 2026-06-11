@@ -1,0 +1,48 @@
+/* =========================
+   VARIABLE
+========================= */
+$color-principal: #3498db;
+$color-texto: #333;
+
+
+/* =========================
+   MIXIN
+========================= */
+@mixin boton {
+  padding: 10px 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* =========================
+   ESTILOS
+========================= */
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+}
+
+
+/* ANIDACIÓN */
+.card {
+  background: white;
+  padding: 20px;
+  width: 250px;
+  text-align: center;
+
+  h2 {
+    color: $color-principal; /* uso del variable */
+  }
+
+  p {
+    color: $color-texto;  /* uso del variable */
+  }
+
+  .btn {
+    @include boton;           /* uso del mixin */
+    background: $color-principal;
+    color: white;
+  }
+}

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* B) RESPONSIVO (Mobile First + Flex y Grid) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== BASE: MÓVIL (sin media query) ===== */
+.header {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  /* En móvil: todo en 1 columna */
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.logo {
+  margin: 0;
+}
+
+/* FLEX: menú vertical en móvil */
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.nav a {
+  text-decoration: none;
+  color: #333;
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+}
+
+/* En móvil: sidebar y contenido en 1 columna */
+.layout {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.sidebar {
+  padding: 16px;
+  border-bottom: 1px solid #ddd; /* en móvil va arriba, separa */
+}
+
+.content {
+  padding: 16px;
+}
+
+.hero {
+  padding: 16px;
+  border: 1px solid #ddd;
+  margin-bottom: 16px;
+}
+
+/* FLEX: botones en columna en móvil */
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.btn {
+  padding: 10px 14px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+}
+.btn--primary {
+  background: #333;
+  color: #fff;
+}
+.btn--ghost {
+  background: transparent;
+}
+
+/* GRID: cards 1 columna en móvil */
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.card {
+  padding: 20px;
+  border: 1px solid #ddd;
+}
+
+.footer {
+  border-top: 1px solid #ddd;
+  padding: 16px;
+}
+
+/* ===== TABLET (>=768px) ===== */
+@media (min-width: 768px) {
+  .header {
+    /* Logo + nav al lado */
+    grid-template-columns: 220px 1fr;
+    align-items: center;
+  }
+  .nav {
+    flex-direction: row; /* menú horizontal */
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .actions {
+    flex-direction: row; /* botones en fila */
+    justify-content: flex-start;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr; /* 2 columnas */
+    gap: 16px;
+  }
+}
+/* ===== LAPTOP/DESKTOP (>=1024px) ===== */
+@media (min-width: 1024px) {
+  .layout {
+    grid-template-columns: 260px 1fr; /* sidebar categorias + contenido */
+  }
+  .sidebar {
+    border-right: 1px solid #ddd;
+  }
+  .content {
+    padding: 16px 24px;
+  }
+  .cards {
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  }
+}
+/* ===== DESKTOP grande (>=1200px) opcional ===== */
+@media (min-width: 1200px) {
+  .content {
+    padding: 24px 32px; /* solo se afecta el margen del contenido*/
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

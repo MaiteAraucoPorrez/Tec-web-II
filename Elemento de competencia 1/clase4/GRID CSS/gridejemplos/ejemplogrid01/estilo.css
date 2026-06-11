@@ -1,0 +1,13 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* 1fr = una fracción del espacio disponible */
+  gap: 10px;
+}
+
+.grid div {
+  background: #4CAF50;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}

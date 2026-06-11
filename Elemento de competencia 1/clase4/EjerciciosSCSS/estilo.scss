@@ -1,0 +1,55 @@
+$black: #000;
+$gap: 15px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+.cabecera {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+    width: 100%;
+    max-width: 700px;
+
+    .box {
+        border: 2px solid $black;
+        padding: 20px;
+        text-align: center;
+        font-weight: bold;
+        font-size: 2.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    header, nav, footer {
+        width: 100%;
+        min-height: 80px;
+    }
+
+    .contenido {
+        display: flex;
+        gap: $gap;
+        width: 100%;
+
+        main {
+            flex: 1.5;
+            min-height: 300px;
+        }
+
+        aside {
+            flex: 1;
+            min-height: 300px;
+        }
+    }
+}

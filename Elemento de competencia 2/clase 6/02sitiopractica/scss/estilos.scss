@@ -1,0 +1,78 @@
+$primary-color: #3498db;
+$secondary-color: #2ecc71;
+$background: #f0f0f0;
+$font: Arial;
+$button-bg: red;
+
+body {
+  background-color: $background;
+  font-family: $font;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  background-color: $primary-color;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 20px;
+  text-align: center;
+  font: bold 18px $font;
+}
+
+img {
+  height: 300px;
+  width: auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button {
+  background: $button-bg;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font: bold 16px $font;
+  width: 150px;
+  border-radius: 16px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  border-radius: 12px;
+}
+
+button:hover {
+  background: $secondary-color;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+:focus {
+  outline: 2px solid $primary-color;
+}
+

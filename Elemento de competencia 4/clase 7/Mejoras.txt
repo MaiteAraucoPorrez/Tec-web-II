@@ -1,0 +1,64 @@
+1. Imagenes con alt
+2. Meta description
+3. Open graph
+Ejemplo:
+<meta 
+property="og:title"
+content="Curso de React con TypeScript">
+
+<meta 
+property="og:description"
+content="Aprende React desde cero con proyectos reales">
+
+<meta
+property="og:image" 
+content="https://misitio.com/react.jpg">
+
+4. title
+
+ <Helmet>
+
+        <title>
+          Blog de Tecnología | Inicio
+        </title>
+
+        <meta
+          name="description"
+          content="Noticias modernas sobre React, JavaScript y desarrollo web."
+        />
+
+        <meta
+          name="keywords"
+          content="React, JavaScript, frontend, desarrollo web"
+        />
+
+        <meta
+          name="author"
+          content="Juan Pérez"
+        />
+
+        {/* Open Graph */}
+
+        <meta
+          property="og:title"
+          content="Blog de Tecnología"
+        />
+
+        <meta
+          property="og:description"
+          content="Noticias modernas sobre React y desarrollo frontend."
+        />
+
+        <meta
+          property="og:image"
+          content={reactblog}
+        />
+
+        <meta
+          property="og:type"
+          content="website"
+        />
+
+      </Helmet>
+
+en cada una de las pages, de acuerdo al contenido de la page.

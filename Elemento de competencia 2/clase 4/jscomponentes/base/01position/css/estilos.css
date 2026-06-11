@@ -1,0 +1,29 @@
+body{
+    font-family: Arial;
+    padding:20px;
+}
+
+.contenedor{
+    width:400px;
+    height:200px;
+    border:2px solid black;
+    margin-bottom:20px;
+    position:relative;
+}
+
+.caja{
+    width:100px;
+    height:100px;
+    background:red;
+    color:white;
+}
+
+button{
+    margin:5px;
+    padding:8px 12px;
+}
+
+.azul{
+    background: blue;
+    color: white;
+}

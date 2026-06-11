@@ -1,0 +1,105 @@
+// Variables
+$primary: #4a90e2; 
+$primary-dark: #2c6bcf; 
+$gray: gray(50%);
+$text: #333;
+
+// Mobile first
+body {
+  background: #fff;
+  color: $text;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: $primary;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.contenedor {
+  padding: 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section {
+  margin: 20px 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+}
+
+#formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  label {
+    font: bold 18px Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+#mensaje {
+  margin-top: 20px;
+  font-size: 18px;
+  display: none;
+}
+
+// Boton
+button {
+  width: 30%;
+  padding: 14px;
+  border: none;
+  background: $primary;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;
+  
+  &:focus {
+    outline: 3px solid $primary;
+  }
+
+  // Hover SOLO si está habilitado
+  &:not(:disabled):hover {
+    background: $primary-dark;
+  }
+
+  // Estado deshabilitado
+  &:disabled {
+    background: $gray;
+    cursor: not-allowed;
+    opacity: 0.7;
+  }
+}
+
+// Tablet
+@media (min-width: 768px) {
+  .contenedor {
+    max-width: 500px;
+  }
+  h1 {
+    font-size: 28px;
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .contenedor {
+    max-width: 600px;
+  }
+}

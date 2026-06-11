@@ -1,0 +1,60 @@
+/* BREAKPOINTS para arriba */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #222;
+}
+
+.header {
+  background: #5b3a29;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.nav {
+  background: #e8d9c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px;
+}
+.nav a {
+  text-decoration: none;
+  color: #222;
+  font-weight: bold;
+}
+
+.contenedor {
+  padding: 20px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.card {
+  background: #f7f3ee;
+  padding: 30px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+  }
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+/*# sourceMappingURL=estilos.css.map */

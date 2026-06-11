@@ -1,0 +1,73 @@
+/* ====== VARIABLES ====== */
+$color-principal:#333;
+$color-nav:#ddd;
+$color-card:#f2f2f2;
+
+/* definiendo BREAKPOINTS para arriba */
+$tablet: 768px;
+$laptop: 1024px;
+
+/* ====== BASE ====== */
+body{
+  font-family: Arial;
+  margin:0;
+}
+
+.header{
+  background:$color-principal;
+  color:#fff;
+  padding:20px;
+}
+
+.nav{
+  background:$color-nav;
+  padding:10px;
+
+  display:flex;         // Desktop: horizontal
+  flex-direction: column; // Mobile: vertical
+  gap:15px;
+
+  a{
+    text-decoration:none;
+    color:#000;
+  }
+}
+
+/* Desktop: 3 columnas SIEMPRE (luego lo corregimos con max-width) */
+.cards{
+  display:grid;
+  grid-template-columns:1fr; // Mobile: 1 columna
+  gap:10px;
+  padding:20px;
+}
+
+.card{
+  background:$color-card;
+  padding:30px;
+  text-align:center;
+}
+
+/* ====== MEDIA QUERIES ====== */
+@media (min-width: $tablet) {
+  .nav{
+    flex-direction: row; // Tablet: horizontal
+  }
+  .cards{
+    grid-template-columns: repeat(2, 1fr); // Tablet: 2 columnas
+  }
+}
+
+/* Para laptop y resoluciones mayores, mantenemos 3 columnas */
+@media (min-width: $laptop) {
+  .cards{
+    grid-template-columns: repeat(3, 1fr); // Laptop: 3 columnas
+  }
+}
+
+/*
+min-width Aplica estilos cuando la pantalla es igual o mayor al ancho indicado.
+    crece hacia arriba (MOBILE FIRST)
+max-width Aplica estilos cuando la pantalla es igual o menor al ancho indicado.
+    baja hacia resoluciones pequeñas (DESKTOP FIRST)
+
+*/

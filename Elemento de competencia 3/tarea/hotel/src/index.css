@@ -1,0 +1,53 @@
+:root {
+  /* Paleta dorada */
+  --gold: #b8860b;
+  --gold-light: #d4a017;
+  --gold-pale: #f5e6b8;
+
+  /* Fondos oscuros */
+  --dark: #1a1209;
+  --dark2: #2c1e0f;
+
+  /* Fondos claros */
+  --cream: #fdf6ec;
+  --white: #ffffff;
+
+  /* Tipografía */
+  --text: #3b2a14;
+  --muted: #7a6248;
+
+  /* Layout */
+  --sidebar-w: 230px;
+  --header-h: 64px;
+  --footer-h: 48px;
+
+  /* Sombras */
+  --shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+  --shadow-hover: 0 8px 28px rgba(0, 0, 0, 0.18);
+
+  /* Bordes */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-pill: 20px;
+
+  /* Transiciones */
+  --transition: 0.2s ease;
+}
+
+/* ── MODO OSCURO (sobreescribe sólo las que cambian) ── */
+body.dark {
+  --cream: #1a1209;
+  --white: #2c1e0f;
+  --text: #f5e6b8;
+  --muted: #c8a96e;
+  --gold-pale: #3b2a14;
+}
+
+/* ── RESET MÍNIMO ── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,19 @@
+.contenedor {
+    display: flex;
+    background: lightpink;
+    flex-direction: row;
+    justify-content: space-between;
+
+    height: 200px;
+    align-items: flex-start;
+
+    gap: 10px;
+}
+
+.item {
+    width: 100%;
+    background: purple;
+    padding: 20px;
+    /*margin: 10px;*/
+}
+

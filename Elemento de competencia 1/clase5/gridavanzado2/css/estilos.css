@@ -1,0 +1,22 @@
+.layout{
+  display:grid;
+  grid-template-columns: 300px 1fr;
+  grid-template-rows: 100px 1fr 60px;
+  grid-template-areas:
+    "header header"
+    "sidebar content"
+    "footer footer";
+    /* Grid Areas: dibuja el mapa del layout.
+    Cada línea entre comillas representa una fila.
+    Cada palabra representa el “nombre de un área” en una columna. */
+  /*Grid Areas: un área nombrada debe formar un rectángulo perfecto.*/
+  height:100vh; /* “viewport height” (altura de la ventana del navegador). */
+  gap: 10px; /* separación entre bloques (opcional) */
+  padding: 10px; /* margen interno (opcional) */
+}
+
+/* ASIGNAR CADA ELEMENTO A SU ÁREA */
+.header{ grid-area: header; background: #ffd; }
+.sidebar{ grid-area: sidebar; background: #ddf; }
+.content{ grid-area: content; background: #dfd; }
+.footer{ grid-area: footer; background: #fdd; }
